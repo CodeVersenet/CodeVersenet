@@ -49,7 +49,7 @@
 
 ## 👋 About Me
 
-<p align="center">
+<p align="justify">
 🎓 <b>Computer Science & Engineering graduate</b> with a strong focus on <b>Artificial Intelligence, Machine Learning, Python, Backend Engineering, Generative AI, and Cloud</b>. I enjoy turning ideas into practical software by understanding the problem, designing the right architecture, building reliable solutions, testing them thoroughly, and continuously improving them. 🤖 I work on <b>AI agents, RAG applications, intelligent automation, data-driven systems, and backend services</b>, with an interest in building scalable and production-ready applications. ☁️ I also explore <b>cloud platforms, APIs, databases, DevOps, and modern AI tooling</b> to connect intelligent models with real-world products. 🚀 My approach is simple: <b>learn deeply, build consistently, experiment with new technologies, and ship useful systems.</b>
 </p>
 
