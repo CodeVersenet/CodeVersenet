@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="210" viewBox="0 0 1000 210">
+  <defs>
+    <clipPath id="line1"><rect x="0" y="0" width="0" height="210"><animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0;0.0417;0.9722;1" dur="36s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="line2"><rect x="0" y="0" width="0" height="210"><animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.0417;0.0833;0.9722;1" dur="36s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="line3"><rect x="0" y="0" width="0" height="210"><animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.0833;0.1250;0.9722;1" dur="36s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="line4"><rect x="0" y="0" width="0" height="210"><animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.1250;0.1667;0.9722;1" dur="36s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="line5"><rect x="0" y="0" width="0" height="210"><animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.1667;0.2083;0.9722;1" dur="36s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="line6"><rect x="0" y="0" width="0" height="210"><animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.2083;0.2500;0.9722;1" dur="36s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="line7"><rect x="0" y="0" width="0" height="210"><animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.2500;0.2917;0.9722;1" dur="36s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="line8"><rect x="0" y="0" width="0" height="210"><animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.2917;0.3333;0.9722;1" dur="36s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="line9"><rect x="0" y="0" width="0" height="210"><animate attributeName="width" values="0;0;1000;1000;0" keyTimes="0;0.3333;0.3750;0.9722;1" dur="36s" repeatCount="indefinite"/></rect></clipPath>
+  </defs>
+
+  <g font-family="Fira Code, DejaVu Sans Mono, monospace" font-size="15" font-weight="600" fill="#67E8F9" text-anchor="middle">
+    <text x="500" y="28" clip-path="url(#line1)">Computer Science and Engineering Graduate.</text>
+    <text x="500" y="48" clip-path="url(#line2)">Focused on AI, Machine Learning, Python, Backend Engineering,</text>
+    <text x="500" y="68" clip-path="url(#line3)">Generative AI and Cloud.</text>
+    <text x="500" y="88" clip-path="url(#line4)">I enjoy turning ideas into working systems from problem definition</text>
+    <text x="500" y="108" clip-path="url(#line5)">to design, implementation, testing and deployment.</text>
+    <text x="500" y="128" clip-path="url(#line6)">I build intelligent systems, AI agents, RAG applications,</text>
+    <text x="500" y="148" clip-path="url(#line7)">backend services and cloud-ready solutions.</text>
+    <text x="500" y="168" clip-path="url(#line8)">My engineering workflow is IDEA → DESIGN → BUILD → TEST</text>
+    <text x="500" y="188" clip-path="url(#line9)">→ DEPLOY → IMPROVE.</text>
+  </g>
+</svg>
