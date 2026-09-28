@@ -148,7 +148,7 @@ AI application project built with a modern web stack and Gemini API integration.
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,java,cpp,js,html,css,flask,fastapi,react,flutter,pytorch,tensorflow,sklearn,pandas,numpy,mysql,mongodb,firebase,gcp,azure,docker,kubernetes,terraform,git,github,vscode" alt="Technology stack">
+<img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/tech-stack-animation.gif" width="100%" alt="Animated technology stack">
 
 </div>
 
@@ -180,9 +180,13 @@ AI application project built with a modern web stack and Gemini API integration.
 
 <div align="center">
 
-### 🐍 CONTRIBUTION MOTION
+### 🧠 AI NEURAL MOTION
 
-<img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Animated contribution activity">
+<img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/ai-neural-motion.gif" width="100%" alt="Animated AI neural network">
+
+<br>
+
+<sub>DATA → EMBEDDINGS → REASONING → OUTPUT</sub>
 
 </div>
 
