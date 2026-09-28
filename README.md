@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="./assets/profile-banner.png" width="100%" alt="C. Pranesh — AI/ML Developer">
+
 # C. PRANESH
 
 ### AI/ML Developer · Python Engineer · Backend Developer
@@ -8,7 +10,8 @@ Building intelligent systems, AI agents, APIs, and practical software products.
 
 <p>
   <a href="https://praneshportfolio22.netlify.app">Portfolio</a> ·
-  <a href="https://www.linkedin.com/in/pranesh22">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/pranesh22">LinkedIn</a> ·
+  <a href="https://github.com/CodeVersenet">GitHub</a>
 </p>
 
 </div>
@@ -17,11 +20,9 @@ Building intelligent systems, AI agents, APIs, and practical software products.
 
 ## 👋 About Me
 
-I'm a Computer Science & Engineering graduate focused on building practical applications across **Artificial Intelligence, Machine Learning, Python, backend engineering, and cloud technologies**.
+I'm a Computer Science & Engineering graduate focused on **Artificial Intelligence, Machine Learning, Python, backend engineering, Generative AI, and cloud technologies**.
 
-I enjoy taking an idea from **problem → architecture → implementation → deployment** and continuously improving my engineering fundamentals.
-
----
+I enjoy turning ideas into working software — from **problem → architecture → implementation → deployment → improvement**.
 
 ## 🧠 Engineering Focus
 
@@ -34,8 +35,6 @@ I enjoy taking an idea from **problem → architecture → implementation → de
 | ☁️ Cloud | Google Cloud, Vertex AI, Azure fundamentals |
 | 🚀 DevOps | Docker, Kubernetes, Terraform, CI/CD |
 | 💻 Software | Java, C++, JavaScript, React.js, Flutter |
-
----
 
 ## 🛠️ Tech Stack
 
@@ -67,36 +66,28 @@ I enjoy taking an idea from **problem → architecture → implementation → de
 ## 🚀 Featured Work
 
 ### 🤖 AI Blueprint Agent
-An AI-oriented project exploring structured task decomposition, intelligent workflows, and agent-based execution.
+Exploring structured task decomposition, intelligent workflows, and agent-based execution.
 
 ### 👁️ Algovis — Code Visualizer
-A developer-focused project designed to make code and algorithm execution easier to understand visually.
+A developer-focused project for making code and algorithm execution easier to understand visually.
 
 ### 📈 Forza AI
 A machine-learning-oriented project exploring market data and prediction workflows.
 
 ### 🎵 Neon Music
-A music application integrating external music services and a modern application interface.
+A music application integrating external music services with a modern application interface.
 
 ### 🏏 Fantasy Cricket League
-A fantasy cricket application developed during an internship, combining application logic with an interactive user experience.
+A fantasy cricket application developed during an internship with interactive application logic and user experience.
 
 ### 📊 Analytics Projects
-Data-analysis and dashboard work focused on transforming raw data into useful business insights.
+Data analysis and dashboard work focused on transforming raw data into useful business insights.
 
 ---
 
 ## 🔭 Currently Exploring
 
-- Advanced Python
-- Data Structures & Algorithms
-- Machine Learning & Deep Learning
-- Generative AI
-- AI Agent Architecture
-- Cloud Engineering
-- Production-grade Backend Systems
-
----
+**Advanced Python** · **Data Structures & Algorithms** · **Machine Learning & Deep Learning** · **Generative AI** · **AI Agent Architecture** · **Cloud Engineering** · **Production-grade Backend Systems**
 
 ## 🧩 How I Build
 
@@ -116,8 +107,6 @@ Deploy
 Improve
 ```
 
----
-
 ## 📫 Connect
 
 **Portfolio:** https://praneshportfolio22.netlify.app
@@ -125,8 +114,6 @@ Improve
 **LinkedIn:** https://www.linkedin.com/in/pranesh22
 
 **GitHub:** https://github.com/CodeVersenet
-
----
 
 <div align="center">
 
