@@ -51,7 +51,7 @@
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira%20Code&weight=600&size=15&duration=2100&pause=900&color=67E8F9&center=true&vCenter=true&multiline=true&width=1000&height=220&lines=Computer+Science+and+Engineering+Graduate.;Focused+on+AI%2C+Machine+Learning%2C+Python%2C+Backend+Engineering%2C+Generative+AI+and+Cloud.;I+enjoy+turning+ideas+into+working+systems+from+problem+definition+to+design%2C+implementation%2C+testing+and+deployment.;I+build+intelligent+systems%2C+AI+agents%2C+RAG+applications%2C+backend+services+and+cloud-ready+solutions.;My+engineering+workflow+is+IDEA+%E2%86%92+DESIGN+%E2%86%92+BUILD+%E2%86%92+TEST+%E2%86%92+DEPLOY+%E2%86%92+IMPROVE." alt="Animated About Me">
+<img src="./assets/about-me-typing.svg?v=2" width="100%" alt="Animated About Me — complete sentences">
 
 </div>
 
