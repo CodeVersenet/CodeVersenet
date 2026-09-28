@@ -49,11 +49,9 @@
 
 ## 👋 About Me
 
-<div align="center">
-
-<img src="./assets/about-me-typing.svg?v=2" width="100%" alt="Animated About Me — complete sentences">
-
-</div>
+<p align="center">
+Computer Science and Engineering graduate focused on Artificial Intelligence, Machine Learning, Python, backend engineering, Generative AI, and cloud technologies. I enjoy turning ideas into working systems by moving from problem definition and system design through implementation, testing, deployment, and continuous improvement. I build intelligent systems, AI agents, RAG applications, backend services, and cloud-ready solutions.
+</p>
 
 ---
 
