@@ -119,51 +119,50 @@ jobs:
 
           frames[0].save(f"{OUT}/role-tech-typing.gif",save_all=True,append_images=frames[1:],duration=55,loop=0,optimize=True)
 
-          # Neural-network / AI-model animation
+          # Neural architecture animation: INPUT → ENCODE → ATTENTION → REASON → OUTPUT
           frames=[]
-          random.seed(7)
-          layers=[5,7,6,4]
-          xs=[120,360,600,850]
+          layers=[4,7,8,6,4]
+          xs=[90,300,500,700,910]
+          layer_names=["INPUT","ENCODE","ATTENTION","REASON","OUTPUT"]
           nodes=[]
-          for li,n in enumerate(layers):
-              ys=[58+j*(110/(n-1)) for j in range(n)]
-              nodes.append([(xs[li],y) for y in ys])
+          for x,n in zip(xs,layers):
+              ys=[60+j*(90/(n-1)) for j in range(n)]
+              nodes.append([(x,y) for y in ys])
 
-          for f in range(48):
+          for f in range(56):
               im=Image.new("RGB",(W,H),(3,8,16))
               d=ImageDraw.Draw(im)
-              d.text((28,16),"AI MODEL / NEURAL ACTIVITY",font=font_b,fill=(230,242,255))
-              d.text((28,44),"DATA  →  EMBEDDINGS  →  REASONING  →  OUTPUT",font=font,fill=(95,205,240))
+              d.text((28,14),"AI MODEL / NEURAL ARCHITECTURE",font=font_b,fill=(230,242,255))
+              d.text((28,42),"INPUT  →  ENCODE  →  ATTENTION  →  REASON  →  OUTPUT",font=font,fill=(95,205,240))
 
-              # connections
+              # Architecture connections
               for li in range(len(nodes)-1):
                   for a in nodes[li]:
                       for b in nodes[li+1]:
-                          d.line((a[0],a[1],b[0],b[1]),fill=(22,70,105),width=1)
+                          d.line((a[0],a[1],b[0],b[1]),fill=(18,58,88),width=1)
 
-              # moving signals
-              for s in range(18):
-                  li=(s+f//6)%3
-                  a=nodes[li][s%len(nodes[li])]
+              # Firing signals moving through successive layers
+              for s in range(24):
+                  li=(s+f//5)%4
+                  a=nodes[li][(s*2+f)%len(nodes[li])]
                   b=nodes[li+1][(s*3+f)%len(nodes[li+1])]
-                  t=((f*0.075+s*0.17)%1.0)
+                  t=(f*0.10+s*0.13)%1.0
                   x=a[0]+(b[0]-a[0])*t
                   y=a[1]+(b[1]-a[1])*t
-                  r=4 if s%3 else 6
+                  r=3 if s%3 else 5
                   d.ellipse((x-r,y-r,x+r,y+r),fill=(70,220,255))
 
-              # nodes pulse
+              # Pulsing neurons + highlighted active pathway
               for li,layer in enumerate(nodes):
                   for ni,(x,y) in enumerate(layer):
-                      pulse=2+int(2*(1+math.sin(f*0.35+ni+li))/2)
-                      d.ellipse((x-pulse,y-pulse,x+pulse,y+pulse),fill=(80,205,255))
-                      d.ellipse((x-3,y-3,x+3,y+3),fill=(230,250,255))
+                      pulse=2+int(2*(1+math.sin(f*.32+ni+li))/2)
+                      d.ellipse((x-pulse,y-pulse,x+pulse,y+pulse),fill=(70,190,240))
+                      d.ellipse((x-3,y-3,x+3,y+3),fill=(235,250,255))
 
-              labels=["INPUT","EMBED","REASON","OUTPUT"]
-              for x,label in zip(xs,labels):
-                  d.text((x-30,178),label,font=mono,fill=(120,205,235))
+              for x,name in zip(xs,layer_names):
+                  d.text((x-38,157),name,font=mono,fill=(120,205,235))
 
-              d.text((28,195),"> neural pathways active  •  model processing...",font=mono,fill=(90,230,175))
+              d.text((28,178),"> attention weights shifting  •  reasoning pathway active  •  model online",font=mono,fill=(90,230,175))
               frames.append(im)
 
           frames[0].save(f"{OUT}/ai-neural-motion.gif",save_all=True,append_images=frames[1:],duration=80,loop=0,optimize=True)
