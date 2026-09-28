@@ -7,7 +7,7 @@
 <!-- Animated role + synchronized real technology logo -->
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/role-tech-typing.gif?v=3" width="100%" alt="Animated technology role and logo typing">
+<img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/role-tech-typing.gif?v=4" width="100%" alt="Animated technology role and logo typing">
 
 </div>
 
@@ -148,22 +148,10 @@ AI application project built with a modern web stack and Gemini API integration.
 
 <div align="center">
 
-<a href="https://github.com/CodeVersenet">
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=CodeVersenet&show_icons=true&hide_border=true&theme=tokyonight&rank_icon=github" alt="GitHub statistics">
-</a>
+### 🟢 CONTRIBUTION MOTION
 
-<a href="https://github.com/CodeVersenet">
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=CodeVersenet&layout=compact&hide_border=true&theme=tokyonight" alt="Top languages">
-</a>
+<img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/github-contribution-grid-snake-dark.svg?v=4" width="100%" alt="Animated GitHub contribution motion">
 
-</div>
-
-<br>
-
-<div align="center">
-<a href="https://github.com/CodeVersenet">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=CodeVersenet&custom_title=C.%20Pranesh%20%E2%80%94%20Contribution%20Activity&theme=tokyo-night&hide_border=true&area=true" width="100%" alt="Contribution activity graph">
-</a>
 </div>
 
 <br>
@@ -172,11 +160,13 @@ AI application project built with a modern web stack and Gemini API integration.
 
 ### 🧠 AI NEURAL MOTION
 
-<img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/ai-neural-motion.gif?v=2" width="100%" alt="Animated AI neural network">
+<img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/ai-neural-motion.gif?v=4" width="100%" alt="Animated AI neural network">
 
 <sub>DATA → EMBEDDINGS → REASONING → OUTPUT</sub>
 
-</div>---
+</div>
+
+---
 
 ## 🧭 Engineering Playbook
 
