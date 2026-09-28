@@ -4,20 +4,10 @@
 
 <br><br>
 
-<!-- Animated role + real technology icon carousel -->
+<!-- Animated role + synchronized real technology logo -->
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira%20Code&weight=700&size=24&duration=1800&pause=700&color=22D3EE&center=true&vCenter=true&width=950&lines=AI%2FML+DEVELOPER;PYTHON+ENGINEER;BACKEND+DEVELOPER;GENERATIVE+AI+BUILDER;CLOUD+ENGINEER" alt="Animated engineering roles">
-
-<br>
-
-<!-- One real logo at a time, synchronized with the role carousel -->
-<img src="https://skillicons.dev/icons?i=python&theme=dark" width="58" alt="Python logo">
-<img src="https://skillicons.dev/icons?i=fastapi&theme=dark" width="58" alt="FastAPI logo">
-<img src="https://skillicons.dev/icons?i=pytorch&theme=dark" width="58" alt="PyTorch logo">
-<img src="https://skillicons.dev/icons?i=react&theme=dark" width="58" alt="React logo">
-<img src="https://skillicons.dev/icons?i=docker&theme=dark" width="58" alt="Docker logo">
-<img src="https://skillicons.dev/icons?i=googlecloud&theme=dark" width="58" alt="Google Cloud logo">
+<img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/role-tech-typing.gif?v=3" width="100%" alt="Animated technology role and logo typing">
 
 </div>
 
