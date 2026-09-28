@@ -1,0 +1,158 @@
+name: Generate AI portfolio animations
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+  schedule:
+    - cron: "17 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install animation dependencies
+        run: pip install pillow requests cairosvg
+
+      - name: Generate animated tech logos and neural network
+        env:
+          REPO_OWNER: ${{ github.repository_owner }}
+        run: |
+          cat > generate_animations.py <<'PY'
+          import io, os, math, random, subprocess
+          from PIL import Image, ImageDraw, ImageFont
+          import requests, cairosvg
+
+          W, H = 1000, 230
+          OUT = "dist"
+          os.makedirs(OUT, exist_ok=True)
+          font_b = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 22)
+          font = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 15)
+          mono = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf", 13)
+
+          logos = [
+            ("Python","python"),("Java","openjdk"),("C++","cplusplus"),
+            ("JavaScript","javascript"),("React","react"),("FastAPI","fastapi"),
+            ("Flask","flask"),("PyTorch","pytorch"),("TensorFlow","tensorflow"),
+            ("Flutter","flutter"),("Docker","docker"),("Kubernetes","kubernetes"),
+            ("Google Cloud","googlecloud"),("Azure","microsoftazure"),("Git","git")
+          ]
+
+          def get_icon(slug):
+              url = f"https://cdn.simpleicons.org/{slug}/67E8F9"
+              r = requests.get(url, timeout=15)
+              r.raise_for_status()
+              return Image.open(io.BytesIO(cairosvg.svg2png(bytestring=r.content, output_width=54, output_height=54))).convert("RGBA")
+
+          icons = {}
+          for name, slug in logos:
+              try: icons[name] = get_icon(slug)
+              except Exception as e: print("icon skipped", name, e)
+
+          frames=[]
+          N=48
+          for f in range(N):
+              im=Image.new("RGB",(W,H),(5,10,18))
+              d=ImageDraw.Draw(im)
+              # grid
+              for x in range(0,W,50): d.line((x,0,x,H), fill=(13,35,55), width=1)
+              for y in range(0,H,38): d.line((0,y,W,y), fill=(13,35,55), width=1)
+              d.text((28,20),"TECH STACK / LIVE",font=font_b,fill=(230,242,255))
+              d.text((28,50),"Languages • Frameworks • ML • Cloud",font=font,fill=(105,190,220))
+
+              # show 6 logos, cycling like a typing carousel
+              start=(f//8)%len(logos)
+              selected=[logos[(start+i)%len(logos)] for i in range(6)]
+              for i,(name,slug) in enumerate(selected):
+                  x=40+i*155
+                  y=82
+                  icon=icons.get(name)
+                  # fade-in / fade-out timing per slot
+                  phase=(f%8)
+                  alpha=min(255,phase*50) if phase<5 else max(80,255-(phase-5)*55)
+                  if icon:
+                      layer=Image.new("RGBA",icon.size,(0,0,0,0))
+                      layer.alpha_composite(icon)
+                      layer.putalpha(icon.getchannel("A").point(lambda a: a*alpha//255))
+                      im.paste(layer,(x+48,y),layer)
+                  d=ImageDraw.Draw(im)
+                  tw=d.textbbox((0,0),name,font=font)[2]
+                  d.text((x+75-tw//2,150),name,font=font,fill=(225,235,245))
+                  d.rounded_rectangle((x+5,178,x+145,183),radius=2,fill=(35,95,125))
+                  progress=((f*3+i*19)%140)
+                  d.rounded_rectangle((x+5,178,x+5+progress,183),radius=2,fill=(65,210,255))
+
+              d.text((28,205),"> loading_next_stack_module()  |  ONLINE",font=mono,fill=(90,230,175))
+              frames.append(im)
+
+          frames[0].save(f"{OUT}/tech-stack-animation.gif",save_all=True,append_images=frames[1:],duration=90,loop=0,optimize=True)
+
+          # Neural-network / AI-model animation
+          frames=[]
+          random.seed(7)
+          layers=[5,7,6,4]
+          xs=[120,360,600,850]
+          nodes=[]
+          for li,n in enumerate(layers):
+              ys=[45+j*(140/(n-1)) for j in range(n)]
+              nodes.append([(xs[li],y) for y in ys])
+
+          for f in range(48):
+              im=Image.new("RGB",(W,H),(3,8,16))
+              d=ImageDraw.Draw(im)
+              d.text((28,16),"AI MODEL / NEURAL ACTIVITY",font=font_b,fill=(230,242,255))
+              d.text((28,44),"DATA  →  EMBEDDINGS  →  REASONING  →  OUTPUT",font=font,fill=(95,205,240))
+
+              # connections
+              for li in range(len(nodes)-1):
+                  for a in nodes[li]:
+                      for b in nodes[li+1]:
+                          d.line((a[0],a[1],b[0],b[1]),fill=(22,70,105),width=1)
+
+              # moving signals
+              for s in range(18):
+                  li=(s+f//6)%3
+                  a=nodes[li][s%len(nodes[li])]
+                  b=nodes[li+1][(s*3+f)%len(nodes[li+1])]
+                  t=((f*0.075+s*0.17)%1.0)
+                  x=a[0]+(b[0]-a[0])*t
+                  y=a[1]+(b[1]-a[1])*t
+                  r=4 if s%3 else 6
+                  d.ellipse((x-r,y-r,x+r,y+r),fill=(70,220,255))
+
+              # nodes pulse
+              for li,layer in enumerate(nodes):
+                  for ni,(x,y) in enumerate(layer):
+                      pulse=2+int(2*(1+math.sin(f*0.35+ni+li))/2)
+                      d.ellipse((x-pulse,y-pulse,x+pulse,y+pulse),fill=(80,205,255))
+                      d.ellipse((x-3,y-3,x+3,y+3),fill=(230,250,255))
+
+              labels=["INPUT","EMBED","REASON","OUTPUT"]
+              for x,label in zip(xs,labels):
+                  d.text((x-30,205),label,font=mono,fill=(120,205,235))
+
+              d.text((28,220),"> neural pathways active  •  model processing...",font=mono,fill=(90,230,175))
+              frames.append(im)
+
+          frames[0].save(f"{OUT}/ai-neural-motion.gif",save_all=True,append_images=frames[1:],duration=80,loop=0,optimize=True)
+          PY
+          python generate_animations.py
+
+      - name: Publish animations to output branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git fetch origin output:output || true
+          git checkout --orphan output
+          git rm -rf . || true
+          cp -R dist/* .
+          git add .
+          git commit -m "Update AI portfolio animations" || true
+          git push --force origin output
+
