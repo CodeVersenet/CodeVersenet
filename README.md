@@ -168,6 +168,16 @@ AI application project built with a modern web stack and Gemini API integration.
 </a>
 </div>
 
+<br>
+
+<div align="center">
+
+### 🐍 CONTRIBUTION MOTION
+
+<img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/github-contribution-grid-snake-dark.svg" width="100%" alt="Animated contribution activity">
+
+</div>
+
 ---
 
 ## 🧭 Engineering Playbook
@@ -248,5 +258,9 @@ AI application project built with a modern web stack and Gemini API integration.
 ### BUILD. LEARN. EXPERIMENT. SHIP.
 
 <sub>Engineering intelligent systems one iteration at a time.</sub>
+
+<br>
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira%20Code&size=15&duration=1800&pause=700&color=94A3B8&center=true&vCenter=true&width=700&lines=Always+learning.;Always+building.;Always+shipping." alt="Closing typing animation">
 
 </div>
