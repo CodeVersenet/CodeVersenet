@@ -4,11 +4,13 @@
 
 <br><br>
 
-<!-- Live typing animation -->
-<a href="https://github.com/CodeVersenet">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira%20Code&weight=700&size=24&duration=2600&pause=900&color=22D3EE&center=true&vCenter=true&width=950&lines=AI%2FML+DEVELOPER+%E2%9A%A1;PYTHON+ENGINEER+%F0%9F%90%8D;BACKEND+DEVELOPER+%E2%9A%99%EF%B8%8F;GENAI+%26+AI+AGENT+BUILDER+%F0%9F%A4%96;CLOUD+%26+SOFTWARE+ENGINEERING+%F0%9F%9A%80" alt="Typing animation">
-</a>
+<!-- Animated role system -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira%20Code&weight=700&size=24&duration=2200&pause=900&color=22D3EE&center=true&vCenter=true&width=950&lines=AI%2FML+DEVELOPER;PYTHON+%7C+FASTAPI+%7C+FLASK;PYTORCH+%7C+TENSORFLOW+%7C+SCIKIT-LEARN;GENERATIVE+AI+%7C+RAG+%7C+AI+AGENTS;GOOGLE+CLOUD+%7C+VERTEX+AI+%7C+DOCKER" alt="Animated engineering roles">
 
+<br>
+
+<!-- Real technology logos -->
+<img src="https://skillicons.dev/icons?i=python,java,cpp,javascript,html,css,flask,fastapi,react,flutter,pytorch,tensorflow,sklearn,pandas,numpy,mysql,mongodb,firebase,gcp,azure,docker,kubernetes,terraform,git,github&perline=9" alt="Languages frameworks libraries cloud and developer tools">
 <br>
 
 <a href="https://praneshportfolio22.netlify.app"><img src="https://img.shields.io/badge/PORTFOLIO-0B1220?style=for-the-badge&logo=googlechrome&logoColor=22D3EE"></a>
@@ -20,6 +22,12 @@
 ---
 
 <div align="center">
+
+## 🧠 NEURAL CORE — LIVE MODEL FLOW
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains%20Mono&size=15&duration=1400&pause=550&color=67E8F9&center=true&vCenter=true&width=900&lines=%5BINPUT%5D+%E2%80%94%E2%97%89%E2%97%89%E2%97%89%E2%86%92+%E2%97%89%E2%97%89%E2%97%89+%E2%86%92+%E2%97%89%E2%97%89%E2%97%89+%E2%86%92+%5BOUTPUT%5D;%E2%97%89%E2%97%89%E2%97%89+signals+firing+through+the+model+%E2%97%89%E2%97%89%E2%97%89;ENCODE+%E2%86%92+ATTEND+%E2%86%92+REASON+%E2%86%92+GENERATE+%E2%86%92+REFINE;MODEL+%E2%80%A2+AGENT+%E2%80%A2+API+%E2%80%A2+CLOUD" alt="Animated neural model flow">
+
+<br>
 
 ### ◈ LIVE BUILD STREAM ◈
 
