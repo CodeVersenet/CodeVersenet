@@ -49,9 +49,15 @@
 
 ## 👋 About Me
 
+<div align="center">
+
 <p align="center">
-Computer Science and Engineering graduate focused on Artificial Intelligence, Machine Learning, Python, backend engineering, Generative AI, and cloud technologies. I enjoy turning ideas into working systems by moving from problem definition and system design through implementation, testing, deployment, and continuous improvement. I build intelligent systems, AI agents, RAG applications, backend services, and cloud-ready solutions.
+Computer Science and Engineering graduate focused on Artificial Intelligence, Machine Learning, Python, backend engineering, Generative AI, and cloud technologies.<br>
+I enjoy transforming ideas into working systems through problem definition, system design, implementation, testing, deployment, and continuous improvement.<br>
+I build intelligent systems, AI agents, RAG applications, backend services, and cloud-ready solutions.
 </p>
+
+</div>
 
 ---
 
