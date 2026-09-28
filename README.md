@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/profile-banner.png" width="100%" alt="C. Pranesh — AI/ML Developer">\n\n<img src="./assets/profile-intro-animation.gif" width="100%" alt="Animated developer introduction — C. Pranesh">
+<img src="./assets/profile-banner.png" width="100%" alt="C. Pranesh — AI/ML Developer">
 
 <br><br>
 
