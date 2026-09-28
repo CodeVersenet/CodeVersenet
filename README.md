@@ -154,6 +154,43 @@ AI application project built with a modern web stack and Gemini API integration.
 
 <br>
 
+### ⚡ TECH STACK — FULL SYSTEM
+
+<div align="center">
+
+**Languages**
+
+<img src="https://skillicons.dev/icons?i=python,java,cpp,javascript,html,css" alt="Python Java C++ JavaScript HTML CSS">
+
+**AI / ML / GenAI**
+
+<img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,numpy,pandas,matplotlib,huggingface" alt="TensorFlow PyTorch Scikit-learn NumPy Pandas Matplotlib Hugging Face">
+
+**Backend / APIs / Frontend**
+
+<img src="https://skillicons.dev/icons?i=flask,fastapi,react,flutter,tailwind" alt="Flask FastAPI React Flutter Tailwind CSS">
+
+**Databases / Vector Search**
+
+<img src="https://skillicons.dev/icons?i=mysql,mongodb,firebase" alt="MySQL MongoDB Firebase">
+
+<sub>ChromaDB • FAISS • REST APIs</sub>
+
+**Cloud / DevOps**
+
+<img src="https://skillicons.dev/icons?i=gcp,azure,docker,kubernetes,terraform" alt="Google Cloud Azure Docker Kubernetes Terraform">
+
+<sub>Vertex AI • CI/CD</sub>
+
+**Engineering / Tools**
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode,androidstudio,selenium" alt="Git GitHub VS Code Android Studio Selenium">
+
+<sub>Playwright • Rest-Assured • LangChain • Gemini • OpenAI • Agent Development Kit (ADK)</sub>
+
+</div>
+<br>
+
 ### 🧠 AI NEURAL MOTION
 
 <img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/ai-neural-motion.gif?v=5" width="100%" alt="Animated AI neural network">
