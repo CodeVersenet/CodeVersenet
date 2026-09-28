@@ -29,7 +29,7 @@ jobs:
           from PIL import Image, ImageDraw, ImageFont
           import requests, cairosvg
 
-          W, H = 1000, 230
+          W, H = 1000, 170
           OUT = "dist"
           os.makedirs(OUT, exist_ok=True)
           font_b = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 22)
@@ -55,42 +55,67 @@ jobs:
               try: icons[name] = get_icon(slug)
               except Exception as e: print("icon skipped", name, e)
 
+          # Combined role + technology logo typing animation.
+          # Each frame shows ONE real technology logo and its matching role text.
+          role_items = [
+              ("PYTHON ENGINEER","python"),
+              ("JAVA DEVELOPER","openjdk"),
+              ("C++ DEVELOPER","cplusplus"),
+              ("JAVASCRIPT DEVELOPER","javascript"),
+              ("REACT DEVELOPER","react"),
+              ("FASTAPI BACKEND","fastapi"),
+              ("PYTORCH / ML","pytorch"),
+              ("TENSORFLOW / AI","tensorflow"),
+              ("FLUTTER DEVELOPER","flutter"),
+              ("DOCKER / DEVOPS","docker"),
+              ("KUBERNETES / CLOUD","kubernetes"),
+              ("GOOGLE CLOUD / VERTEX AI","googlecloud"),
+              ("AZURE / CLOUD","microsoftazure"),
+          ]
+
+          role_icons={}
+          for label, slug in role_items:
+              try: role_icons[label] = get_icon(slug)
+              except Exception as e: print("role icon skipped", label, e)
+
           frames=[]
-          N=48
-          for f in range(N):
-              im=Image.new("RGB",(W,H),(5,10,18))
-              d=ImageDraw.Draw(im)
-              # grid
-              for x in range(0,W,50): d.line((x,0,x,H), fill=(13,35,55), width=1)
-              for y in range(0,H,38): d.line((0,y,W,y), fill=(13,35,55), width=1)
-              d.text((28,20),"TECH STACK / LIVE",font=font_b,fill=(230,242,255))
-              d.text((28,50),"Languages • Frameworks • ML • Cloud",font=font,fill=(105,190,220))
+          for label, slug in role_items:
+              icon=role_icons.get(label)
+              # typing-in, hold, typing-out: 3 frames per character phase.
+              for phase in range(3):
+                  for n in range(1, len(label)+1):
+                      im=Image.new("RGB",(W,H),(5,10,18))
+                      d=ImageDraw.Draw(im)
+                      for x in range(0,W,50): d.line((x,0,x,H), fill=(13,35,55), width=1)
+                      for y in range(0,H,34): d.line((0,y,W,y), fill=(13,35,55), width=1)
+                      d.text((32,22),"ENGINEERING STACK",font=font_b,fill=(230,242,255))
+                      if icon:
+                          im.paste(icon,(455,48),icon)
+                      shown=label[:n]
+                      d.text((500,66),shown,font=font_b,fill=(103,232,249))
+                      d.text((500,98),"real technology • active",font=font,fill=(130,190,215))
+                      d.text((32,140),"> switching_module()  |  ONLINE",font=mono,fill=(90,230,175))
+                      frames.append(im)
+                  for _ in range(5):
+                      frames.append(frames[-1].copy())
+                  # erase before next technology
+                  if phase == 2:
+                      for n in range(len(label),0,-1):
+                          im=Image.new("RGB",(W,H),(5,10,18)); d=ImageDraw.Draw(im)
+                          for x in range(0,W,50): d.line((x,0,x,H), fill=(13,35,55), width=1)
+                          for y in range(0,H,34): d.line((0,y,W,y), fill=(13,35,55), width=1)
+                          d.text((32,22),"ENGINEERING STACK",font=font_b,fill=(230,242,255))
+                          if icon: im.paste(icon,(455,48),icon)
+                          d.text((500,66),label[:n],font=font_b,fill=(103,232,249))
+                          frames.append(im)
 
-              # show 6 logos, cycling like a typing carousel
-              start=(f//8)%len(logos)
-              selected=[logos[(start+i)%len(logos)] for i in range(6)]
-              for i,(name,slug) in enumerate(selected):
-                  x=40+i*155
-                  y=82
-                  icon=icons.get(name)
-                  # fade-in / fade-out timing per slot
-                  phase=(f%8)
-                  alpha=min(255,phase*50) if phase<5 else max(80,255-(phase-5)*55)
-                  if icon:
-                      layer=Image.new("RGBA",icon.size,(0,0,0,0))
-                      layer.alpha_composite(icon)
-                      layer.putalpha(icon.getchannel("A").point(lambda a: a*alpha//255))
-                      im.paste(layer,(x+48,y),layer)
-                  d=ImageDraw.Draw(im)
-                  tw=d.textbbox((0,0),name,font=font)[2]
-                  d.text((x+75-tw//2,150),name,font=font,fill=(225,235,245))
-                  d.rounded_rectangle((x+5,178,x+145,183),radius=2,fill=(35,95,125))
-                  progress=((f*3+i*19)%140)
-                  d.rounded_rectangle((x+5,178,x+5+progress,183),radius=2,fill=(65,210,255))
+          frames[0].save(f"{OUT}/role-tech-typing.gif",save_all=True,append_images=frames[1:],duration=55,loop=0,optimize=True)
 
-              d.text((28,205),"> loading_next_stack_module()  |  ONLINE",font=mono,fill=(90,230,175))
-              frames.append(im)
+          # Keep a compact alias for compatibility.
+          frames[0].save(f"{OUT}/tech-stack-animation.gif",save_all=True,append_images=frames[1:],duration=55,loop=0,optimize=True)
 
+          # Neural-network / AI-model animation
+          frames=[]
           frames[0].save(f"{OUT}/tech-stack-animation.gif",save_all=True,append_images=frames[1:],duration=90,loop=0,optimize=True)
 
           # Neural-network / AI-model animation
@@ -148,10 +173,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p /tmp/portfolio-dist
+          cp -R dist/* /tmp/portfolio-dist/
           git fetch origin output:output || true
           git checkout --orphan output
           git rm -rf . || true
-          cp -R dist/* .
+          cp -R /tmp/portfolio-dist/* .
           git add .
           git commit -m "Update AI portfolio animations" || true
           git push --force origin output
