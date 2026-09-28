@@ -4,14 +4,22 @@
 
 <br><br>
 
-<!-- Animated role system -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira%20Code&weight=700&size=24&duration=2200&pause=900&color=22D3EE&center=true&vCenter=true&width=950&lines=AI%2FML+DEVELOPER;PYTHON+%7C+FASTAPI+%7C+FLASK;PYTORCH+%7C+TENSORFLOW+%7C+SCIKIT-LEARN;GENERATIVE+AI+%7C+RAG+%7C+AI+AGENTS;GOOGLE+CLOUD+%7C+VERTEX+AI+%7C+DOCKER" alt="Animated engineering roles">
+<!-- Animated role + real technology icon carousel -->
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira%20Code&weight=700&size=24&duration=1800&pause=700&color=22D3EE&center=true&vCenter=true&width=950&lines=AI%2FML+DEVELOPER;PYTHON+ENGINEER;BACKEND+DEVELOPER;GENERATIVE+AI+BUILDER;CLOUD+ENGINEER" alt="Animated engineering roles">
 
 <br>
 
-<!-- Real technology logos -->
-<img src="https://skillicons.dev/icons?i=python,java,cpp,javascript,html,css,flask,fastapi,react,flutter,pytorch,tensorflow,sklearn,pandas,numpy,mysql,mongodb,firebase,gcp,azure,docker,kubernetes,terraform,git,github&perline=9" alt="Languages frameworks libraries cloud and developer tools">
-<br>
+<!-- One real logo at a time, synchronized with the role carousel -->
+<img src="https://skillicons.dev/icons?i=python&theme=dark" width="58" alt="Python logo">
+<img src="https://skillicons.dev/icons?i=fastapi&theme=dark" width="58" alt="FastAPI logo">
+<img src="https://skillicons.dev/icons?i=pytorch&theme=dark" width="58" alt="PyTorch logo">
+<img src="https://skillicons.dev/icons?i=react&theme=dark" width="58" alt="React logo">
+<img src="https://skillicons.dev/icons?i=docker&theme=dark" width="58" alt="Docker logo">
+<img src="https://skillicons.dev/icons?i=googlecloud&theme=dark" width="58" alt="Google Cloud logo">
+
+</div>
 
 <a href="https://praneshportfolio22.netlify.app"><img src="https://img.shields.io/badge/PORTFOLIO-0B1220?style=for-the-badge&logo=googlechrome&logoColor=22D3EE"></a>
 <a href="https://www.linkedin.com/in/pranesh22"><img src="https://img.shields.io/badge/LINKEDIN-0B1220?style=for-the-badge&logo=linkedin&logoColor=60A5FA"></a>
@@ -144,14 +152,6 @@ AI application project built with a modern web stack and Gemini API integration.
 
 ---
 
-## 🧰 Tech Stack
-
-<div align="center">
-
-<img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/tech-stack-animation.gif" width="100%" alt="Animated technology stack">
-
-</div>
-
 ---
 
 ## 📊 GitHub Pulse
@@ -182,15 +182,11 @@ AI application project built with a modern web stack and Gemini API integration.
 
 ### 🧠 AI NEURAL MOTION
 
-<img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/ai-neural-motion.gif" width="100%" alt="Animated AI neural network">
-
-<br>
+<img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/ai-neural-motion.gif?v=2" width="100%" alt="Animated AI neural network">
 
 <sub>DATA → EMBEDDINGS → REASONING → OUTPUT</sub>
 
-</div>
-
----
+</div>---
 
 ## 🧭 Engineering Playbook
 
