@@ -29,7 +29,7 @@ jobs:
           from PIL import Image, ImageDraw, ImageFont
           import requests, cairosvg
 
-          W, H = 1000, 170
+          W, H = 1000, 200
           OUT = "dist"
           os.makedirs(OUT, exist_ok=True)
           font_b = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 22)
@@ -111,13 +111,6 @@ jobs:
 
           frames[0].save(f"{OUT}/role-tech-typing.gif",save_all=True,append_images=frames[1:],duration=55,loop=0,optimize=True)
 
-          # Keep a compact alias for compatibility.
-          frames[0].save(f"{OUT}/tech-stack-animation.gif",save_all=True,append_images=frames[1:],duration=55,loop=0,optimize=True)
-
-          # Neural-network / AI-model animation
-          frames=[]
-          frames[0].save(f"{OUT}/tech-stack-animation.gif",save_all=True,append_images=frames[1:],duration=90,loop=0,optimize=True)
-
           # Neural-network / AI-model animation
           frames=[]
           random.seed(7)
@@ -125,7 +118,7 @@ jobs:
           xs=[120,360,600,850]
           nodes=[]
           for li,n in enumerate(layers):
-              ys=[45+j*(140/(n-1)) for j in range(n)]
+              ys=[58+j*(110/(n-1)) for j in range(n)]
               nodes.append([(xs[li],y) for y in ys])
 
           for f in range(48):
@@ -160,9 +153,9 @@ jobs:
 
               labels=["INPUT","EMBED","REASON","OUTPUT"]
               for x,label in zip(xs,labels):
-                  d.text((x-30,205),label,font=mono,fill=(120,205,235))
+                  d.text((x-30,178),label,font=mono,fill=(120,205,235))
 
-              d.text((28,220),"> neural pathways active  •  model processing...",font=mono,fill=(90,230,175))
+              d.text((28,195),"> neural pathways active  •  model processing...",font=mono,fill=(90,230,175))
               frames.append(im)
 
           frames[0].save(f"{OUT}/ai-neural-motion.gif",save_all=True,append_images=frames[1:],duration=80,loop=0,optimize=True)
