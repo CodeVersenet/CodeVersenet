@@ -156,44 +156,129 @@ AI application project built with a modern web stack and Gemini API integration.
 
 ### ⚡ TECH STACK — FULL SYSTEM
 
+<table>
+<tr>
+<td align="center" valign="middle" width="50%">
+
+**LANGUAGES**
+
+<img src="https://skillicons.dev/icons?i=python,java,cpp,javascript,html,css&perline=6" alt="Python Java C++ JavaScript HTML CSS">
+
+</td>
+<td align="center" valign="middle" width="50%">
+
+**AI / ML / GENAI**
+
+<img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,numpy,pandas,matplotlib,huggingface&perline=7" alt="TensorFlow PyTorch Scikit-learn NumPy Pandas Matplotlib Hugging Face">
+
+</td>
+</tr>
+<tr>
+<td align="center" valign="middle">
+
+**BACKEND / API / FRONTEND**
+
+<img src="https://skillicons.dev/icons?i=flask,fastapi,react,flutter,tailwind&perline=5" alt="Flask FastAPI React Flutter Tailwind CSS">
+
+<br><sub>REST APIs</sub>
+
+</td>
+<td align="center" valign="middle">
+
+**DATABASES / VECTOR SEARCH**
+
+<img src="https://skillicons.dev/icons?i=mysql,mongodb,firebase&perline=3" alt="MySQL MongoDB Firebase">
+
+<br><sub>ChromaDB • FAISS</sub>
+
+</td>
+</tr>
+<tr>
+<td align="center" valign="middle">
+
+**CLOUD / DEVOPS**
+
+<img src="https://skillicons.dev/icons?i=gcp,azure,docker,kubernetes,terraform&perline=5" alt="Google Cloud Azure Docker Kubernetes Terraform">
+
+<br><sub>Vertex AI • CI/CD</sub>
+
+</td>
+<td align="center" valign="middle">
+
+**TOOLS / PLATFORM**
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode,androidstudio,netlify,powerbi&perline=6" alt="Git GitHub VS Code Android Studio Netlify Power BI">
+
+</td>
+</tr>
+<tr>
+<td align="center" valign="middle">
+
+**AUTOMATION / TESTING**
+
+<img src="https://skillicons.dev/icons?i=selenium,playwright&perline=2" alt="Selenium Playwright">
+
+<br><sub>Rest-Assured</sub>
+
+</td>
+<td align="center" valign="middle">
+
+**AI / AGENT TOOLING**
+
+<img src="https://skillicons.dev/icons?i=langchain,googlecloud,openai&perline=3" alt="LangChain Google Cloud OpenAI">
+
+<br><sub>Gemini • Agent Development Kit (ADK) • Vertex AI</sub>
+
+</td>
+</tr>
+</table>
+
 <div align="center">
 
-**Languages**
-
-<img src="https://skillicons.dev/icons?i=python,java,cpp,javascript,html,css" alt="Python Java C++ JavaScript HTML CSS">
-
-**AI / ML / GenAI**
-
-<img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,numpy,pandas,matplotlib,huggingface" alt="TensorFlow PyTorch Scikit-learn NumPy Pandas Matplotlib Hugging Face">
-
-**Backend / APIs / Frontend**
-
-<img src="https://skillicons.dev/icons?i=flask,fastapi,react,flutter,tailwind" alt="Flask FastAPI React Flutter Tailwind CSS">
-
-**Databases / Vector Search**
-
-<img src="https://skillicons.dev/icons?i=mysql,mongodb,firebase" alt="MySQL MongoDB Firebase">
-
-<sub>ChromaDB • FAISS • REST APIs</sub>
-
-**Cloud / DevOps**
-
-<img src="https://skillicons.dev/icons?i=gcp,azure,docker,kubernetes,terraform" alt="Google Cloud Azure Docker Kubernetes Terraform">
-
-<sub>Vertex AI • CI/CD</sub>
-
-**Engineering / Tools**
-
-<img src="https://skillicons.dev/icons?i=git,github,vscode,androidstudio,selenium" alt="Git GitHub VS Code Android Studio Selenium">
-
-<sub>Playwright • Rest-Assured • LangChain • Gemini • OpenAI • Agent Development Kit (ADK)</sub>
+<sub><b>Focus:</b> AI/ML • Generative AI • AI Agents • Backend Engineering • Cloud Engineering • Production Systems</sub>
 
 </div>
-<br>
 
 ### 🧠 AI NEURAL MOTION
 
 <img src="https://raw.githubusercontent.com/CodeVersenet/CodeVersenet/output/ai-neural-motion.gif?v=5" width="100%" alt="Animated AI neural network">
+
+<br>
+
+### 🏗️ AI ARCHITECTURE
+
+```mermaid
+flowchart LR
+    U[User / App] --> API[API Layer]
+    API --> B[FastAPI / Flask]
+    B --> O[AI Orchestrator]
+    O --> R[RAG Pipeline]
+    O --> A[AI Agent]
+    R --> E[Embeddings]
+    E --> V[(ChromaDB / FAISS)]
+    V --> C[Retrieved Context]
+    C --> L[LLM]
+    A --> L
+    A --> T[Tools / APIs]
+    L --> OUT[Response]
+    T --> OUT
+    OUT --> CL[Cloud Deployment]
+```
+
+### 🔄 AI WORKFLOW
+
+```mermaid
+flowchart LR
+    I[IDEA] --> D[DATA]
+    D --> P[PREPROCESS]
+    P --> M[MODEL / RAG]
+    M --> E[EVALUATE]
+    E --> X[DEPLOY]
+    X --> N[MONITOR]
+    N --> IMP[IMPROVE]
+    IMP --> M
+```
+
 
 </div>
 
