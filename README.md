@@ -47,15 +47,15 @@
 
 ---
 
-## 👋 About
+## 👋 About Me
 
-Computer Science & Engineering graduate focused on **Artificial Intelligence, Machine Learning, Python, backend engineering, Generative AI and cloud technologies**.
+<div align="center">
 
-I enjoy turning an idea into a working system:
+<img src="https://readme-typing-svg.demolab.com?font=Fira%20Code&weight=600&size=17&duration=2200&pause=900&color=67E8F9&center=true&vCenter=true&multiline=true&width=950&height=150&lines=Computer+Science+%26+Engineering+graduate+focused+on+AI%2C+Machine+Learning%2C+Python%2C+backend+engineering%2C+Generative+AI+and+cloud.;I+enjoy+turning+ideas+into+working+systems+from+problem+definition+to+design%2C+implementation%2C+testing+and+deployment.;Currently+building+intelligent+systems%2C+AI+agents%2C+RAG+applications%2C+backend+services+and+cloud-ready+solutions.;IDEA+%E2%86%92+DESIGN+%E2%86%92+BUILD+%E2%86%92+TEST+%E2%86%92+DEPLOY+%E2%86%92+IMPROVE" alt="Animated About Me">
 
-`IDEA → DESIGN → BUILD → TEST → DEPLOY → IMPROVE`
+</div>
 
----
+--- 
 
 ## 🚀 Featured Work
 
