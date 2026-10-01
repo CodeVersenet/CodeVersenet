@@ -53,7 +53,7 @@ jobs:
           ]
 
           def get_icon(slug):
-              url = f"https://cdn.simpleicons.org/{slug}/67E8F9"
+              url = f"https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/{slug}.svg"
               r = requests.get(url, timeout=15)
               r.raise_for_status()
               return Image.open(io.BytesIO(cairosvg.svg2png(bytestring=r.content, output_width=54, output_height=54))).convert("RGBA")
@@ -169,17 +169,10 @@ jobs:
           PY
           python generate_animations.py
 
-      - name: Publish animations to output branch
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          mkdir -p /tmp/portfolio-dist
-          cp -R dist/* /tmp/portfolio-dist/
-          git fetch origin output:output || true
-          git checkout --orphan output
-          git rm -rf . || true
-          cp -R /tmp/portfolio-dist/* .
-          git add .
-          git commit -m "Update AI portfolio animations" || true
-          git push --force origin output
-
+      - name: Publish all generated animations
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          build_dir: dist
+          target_branch: output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
